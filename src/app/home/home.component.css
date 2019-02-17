@@ -1,0 +1,199 @@
+body {
+  background-color: #ececec;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #8e9ea1;
+  display: flex;
+  align-items: center;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+#logo {
+  font-size:1.8em;
+  margin: 0 auto;
+  font-family: 'Poiret One', cursive;
+}
+
+#main-links ul {
+  display: flex;
+}
+
+#social-links ul {
+  display: flex;
+}
+
+#intro {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(238,242,243,0.4), rgba(142,158,171,1)) ,url(../../assets/img/cover.png);
+  background: linear-gradient(to right,rgba(238,242,243,0.2), rgba(142,158,171,0.2)), url(../../assets/img/cover.png);
+  background-position-y: center;
+  background-size: cover;
+}
+
+#intro p{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 25px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+#intro h1{
+  padding: 15px;
+  font-family: 'Poiret One', cursive;
+  font-size: 4em;
+  margin-bottom: 6px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.cards-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkgrey;
+}
+
+.card {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-basis: 250px;
+  max-width: 400px;
+  margin: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+  background-color: white;
+}
+.card .card-img {
+  height: 300px;
+  overflow: hidden;
+  transform: scale(0.95);
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgba(0,0,0,.2);
+}
+.card .card-img img{
+  height: 100%;
+  min-width: 100%;
+}
+
+.card:hover .card-img {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.card .card-title {
+  padding: 10px;
+}
+
+.card .card-desc {
+  padding: 10px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+
+.card .call-to-action {
+  margin: 10px;
+  margin-top: auto;
+  align-self: flex-start;
+}
+.card .call-to-action a{
+  display: block;
+  padding: 20px;
+  color: white;
+  background-color: #8e9ea1;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition-property: border, background-color, color;
+  transition-duration: 0.3s;
+}
+
+.card .call-to-action a:hover{
+  border: 2px solid #8e9ea1;
+  background-color: transparent;
+  color: #8e9ea1;
+}
+
+#showcase {
+  display: flex;
+}
+
+/*#showcase > main > .main-title {*/
+  /*text-align: center;*/
+  /*padding: 20px;*/
+  /*font-size: 45px;*/
+  /*background-color: darkgray;*/
+/*}*/
+
+#showcase aside{
+  flex-basis: 300px;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+#showcase aside h3 {
+  padding: 20px;
+}
+
+#showcase aside a:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+#showcase aside a{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+
+
+#showcase aside ul{
+  list-style-type: none;
+}
+
+#footer {
+  background-color: teal;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 720px){
+  header {
+    flex-direction: column;
+  }
+  #logo {
+    order: -1;
+  }
+  #showcase aside {
+    display: none;
+  }
+  #intro h1{
+    font-size: 1.8em;
+  }
+  #intro p {
+    width: 80%;
+  }
+}
