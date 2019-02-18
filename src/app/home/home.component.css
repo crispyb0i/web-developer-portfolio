@@ -145,7 +145,7 @@ header ul {
 /*}*/
 
 #showcase aside{
-  flex-basis: 300px;
+  flex-basis: 250px;
   background-color: white;
   flex-shrink: 0;
 }
@@ -172,7 +172,7 @@ header ul {
 }
 
 #footer {
-  background-color: teal;
+  background-color: #8e9ea1;
   color: white;
   padding: 20px;
   text-align: center;
